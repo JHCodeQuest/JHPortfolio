@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Hassan | Full-Stack Developer & Automation Specialist</title>
-    <meta name="description" content="Full-Stack Developer & Automation Specialist crafting intuitive digital experiences and automating workflows.">
+    <meta name="description" content="Full-Stack Developer & Automation Specialist with 5+ years experience. Currently at Alpine F1. Skilled in Python, JavaScript, C#, Power Platform, and Azure.">
+    
+    <!-- Google Analytics -->
+    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID from Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your Measurement ID
+    </script>
+    
+    <!-- Open Graph Meta Tags (for LinkedIn, Facebook, etc.) -->
+    <meta property="og:title" content="Joseph Hassan | Full-Stack Developer & Automation Specialist">
+    <meta property="og:description" content="Full-Stack Developer with 5+ years experience building web apps, automating workflows, and delivering results. Currently at Alpine F1.">
+    <meta property="og:image" content="Me.jpg">
+    <meta property="og:url" content="https://jhcodequest.github.io/JHPortfolio/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Joseph Hassan | Full-Stack Developer">
+    <meta name="twitter:description" content="Full-Stack Developer with 5+ years experience. Currently at Alpine F1.">
+    <meta name="twitter:image" content="Me.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="Joseph Hassan, Full-Stack Developer, Python, JavaScript, Power Platform, Azure, Alpine F1, Web Developer, Automation">
+    <meta name="author" content="Joseph Hassan">
+    <link rel="canonical" href="https://jhcodequest.github.io/JHPortfolio/">
     
     <!-- Fonts - Unique combination: Syne for display, DM Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -941,6 +969,143 @@
             color: var(--color-text-muted);
         }
         
+        /* ========== PROFILE IMAGE ========== */
+        .about-profile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .profile-image-container {
+            position: relative;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-accent);
+            box-shadow: var(--glow-md);
+            transition: var(--transition-medium);
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: var(--glow-lg);
+        }
+        
+        .profile-image-ring {
+            position: absolute;
+            inset: -10px;
+            border: 2px dashed var(--color-border-accent);
+            border-radius: 50%;
+            animation: spin 20s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* ========== TESTIMONIALS ========== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .testimonial-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            padding: var(--space-md);
+            position: relative;
+            transition: var(--transition-medium);
+        }
+        
+        .testimonial-card:hover {
+            border-color: var(--color-border-accent);
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 4rem;
+            color: var(--color-accent);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--color-accent-subtle);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.15rem;
+        }
+        
+        .testimonial-info span {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        
+        /* Coming Soon Badge */
+        .coming-soon-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, var(--color-tertiary), #ec4899);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .project-card.coming-soon {
+            opacity: 0.85;
+        }
+        
+        .project-card.coming-soon:hover {
+            opacity: 1;
+        }
+        
         /* ========== CONTACT SECTION ========== */
         .contact-wrapper {
             display: grid;
@@ -1270,6 +1435,9 @@
                                 <a href="https://github.com/JHCodeQuest" target="_blank" className="btn btn-primary">
                                     View My Work →
                                 </a>
+                                <a href="jkhassan_cv.pdf" download className="btn btn-secondary">
+                                    📄 Download CV
+                                </a>
                                 <a href="#contact" className="btn btn-secondary">
                                     Get In Touch
                                 </a>
@@ -1347,6 +1515,15 @@
                             <p className="section-label">About Me</p>
                             <h2 className="section-title">Building Digital Experiences</h2>
                         </div>
+                        
+                        {/* Profile Image */}
+                        <div className="about-profile">
+                            <div className="profile-image-container">
+                                <div className="profile-image-ring"></div>
+                                <img src="Me.jpg" alt="Joseph Hassan" className="profile-image" />
+                            </div>
+                        </div>
+                        
                         <div className="about-grid">
                             {cards.map((card, i) => (
                                 <div key={i} className="about-card">
@@ -1457,6 +1634,45 @@
                     ],
                     tags: ["JavaScript", "Phaser3", "Game Dev"],
                     link: "https://notbovvered.itch.io/neon-breakout"
+                },
+                {
+                    icon: "🐍",
+                    title: "pySnake",
+                    type: "Python Game",
+                    description: "A modern take on the classic Snake game built with Python and Pygame, featuring smooth controls and increasing difficulty.",
+                    features: [
+                        "Classic gameplay with modern visuals",
+                        "Score tracking and high scores",
+                        "Built with Pygame library"
+                    ],
+                    tags: ["Python", "Pygame", "Game Dev"],
+                    comingSoon: true
+                },
+                {
+                    icon: "🎰",
+                    title: "Gambling Prediction ML",
+                    type: "Machine Learning",
+                    description: "A machine learning project exploring pattern recognition and probability analysis in gambling scenarios.",
+                    features: [
+                        "Data analysis and visualization",
+                        "Predictive modeling with Python",
+                        "Statistical probability calculations"
+                    ],
+                    tags: ["Python", "Machine Learning", "Data Science"],
+                    comingSoon: true
+                },
+                {
+                    icon: "📦",
+                    title: "Stock Inquiry Assistant",
+                    type: "AI / Computer Vision",
+                    description: "A smart inventory identification tool that uses AI and computer vision to help store operatives identify items by photo and locate stock positions.",
+                    features: [
+                        "AI-powered image recognition with PyTorch (ResNet-50)",
+                        "OCR text extraction using EasyOCR",
+                        "Inventory lookup with location & stock quantity"
+                    ],
+                    tags: ["Python", "PyTorch", "Computer Vision", "OCR"],
+                    comingSoon: true
                 }
             ];
             
@@ -1469,7 +1685,8 @@
                         </div>
                         <div className="projects-grid">
                             {projects.map((project, i) => (
-                                <div key={i} className="project-card">
+                                <div key={i} className={`project-card ${project.comingSoon ? 'coming-soon' : ''}`}>
+                                    {project.comingSoon && <span className="coming-soon-badge">Coming Soon</span>}
                                     <div className="project-header">
                                         <div className="project-icon">{project.icon}</div>
                                         <div className="project-info">
@@ -1488,18 +1705,20 @@
                                             <span key={j} className="project-tag">{tag}</span>
                                         ))}
                                     </div>
-                                    <div className="project-footer">
-                                        {project.github && (
-                                            <a href={project.github} target="_blank" className="project-link">
-                                                🔗 GitHub
-                                            </a>
-                                        )}
-                                        {project.link && (
-                                            <a href={project.link} target="_blank" className="project-link">
-                                                🎮 Play Game
-                                            </a>
-                                        )}
-                                    </div>
+                                    {!project.comingSoon && (
+                                        <div className="project-footer">
+                                            {project.github && (
+                                                <a href={project.github} target="_blank" className="project-link">
+                                                    🔗 GitHub
+                                                </a>
+                                            )}
+                                            {project.link && (
+                                                <a href={project.link} target="_blank" className="project-link">
+                                                    🎮 Play Game
+                                                </a>
+                                            )}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -1663,20 +1882,66 @@
             );
         }
         
+        // ========== TESTIMONIALS ==========
+        function TestimonialsSection() {
+            const testimonials = [
+                {
+                    text: "Joseph consistently delivered high-quality work and was always willing to go the extra mile. His technical skills combined with excellent communication made him a valuable team member.",
+                    name: "Former Colleague",
+                    role: "Somerset Council",
+                    avatar: "👨‍💼"
+                },
+                {
+                    text: "Working with Joseph was a pleasure. He quickly understood our requirements and delivered a solution that exceeded our expectations. Highly recommend!",
+                    name: "Freelance Client",
+                    role: "Etsy Store Owner",
+                    avatar: "👩‍💼"
+                }
+            ];
+            
+            return (
+                <section className="section">
+                    <div className="section-content">
+                        <div className="section-header">
+                            <p className="section-label">What People Say</p>
+                            <h2 className="section-title">Testimonials</h2>
+                        </div>
+                        <div className="testimonials-grid">
+                            {testimonials.map((t, i) => (
+                                <div key={i} className="testimonial-card">
+                                    <div className="testimonial-content">
+                                        <p className="testimonial-text">{t.text}</p>
+                                        <div className="testimonial-author">
+                                            <div className="testimonial-avatar">{t.avatar}</div>
+                                            <div className="testimonial-info">
+                                                <h4>{t.name}</h4>
+                                                <span>{t.role}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+        
         // ========== CONTACT ==========
         function ContactSection() {
             const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-            const [submitted, setSubmitted] = useState(false);
             
             const handleChange = (e) => {
                 setFormData({ ...formData, [e.target.name]: e.target.value });
             };
             
+            // This creates a mailto link that opens the user's email client (Gmail, Outlook, etc.)
             const handleSubmit = () => {
-                console.log('Form:', formData);
-                setSubmitted(true);
-                setFormData({ name: '', email: '', message: '' });
-                setTimeout(() => setSubmitted(false), 5000);
+                const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+                const body = encodeURIComponent(
+                    `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+                );
+                window.location.href = `mailto:jkhassan95@gmail.com?subject=${subject}&body=${body}`;
             };
             
             return (
@@ -1714,27 +1979,27 @@
                                 </div>
                             </div>
                             <div className="contact-form">
-                                {submitted && (
-                                    <div className="form-success">✓ Message sent successfully!</div>
-                                )}
                                 <div className="form-group">
                                     <label>Your Name</label>
                                     <input type="text" name="name" value={formData.name} 
                                            onChange={handleChange} placeholder="John Doe" />
                                 </div>
                                 <div className="form-group">
-                                    <label>Email Address</label>
+                                    <label>Your Email</label>
                                     <input type="email" name="email" value={formData.email} 
                                            onChange={handleChange} placeholder="john@example.com" />
                                 </div>
                                 <div className="form-group">
                                     <label>Your Message</label>
                                     <textarea name="message" value={formData.message} 
-                                              onChange={handleChange} placeholder="Tell me about your project..." />
+                                              onChange={handleChange} placeholder="Tell me about your project or opportunity..." />
                                 </div>
                                 <button className="btn btn-primary form-submit" onClick={handleSubmit}>
-                                    Send Message →
+                                    📧 Send via Email →
                                 </button>
+                                <p style={{fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '1rem', textAlign: 'center'}}>
+                                    This will open your email client with a pre-filled message
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1771,6 +2036,7 @@
                     <ExperienceSection />
                     <CertificatesSection />
                     <EducationSection />
+                    {/* <TestimonialsSection /> */}
                     <ContactSection />
                     <Footer />
                 </>
