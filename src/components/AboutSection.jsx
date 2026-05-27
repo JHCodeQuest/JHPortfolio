@@ -44,10 +44,7 @@ export default function AboutSection() {
             to what people actually need.
           </p>
           <p>
-            Now I'm studying my re-entry into tech as an Automation Developer. I combine my
-            enterprise experience with Python to build workflow tooling, data pipelines, and
-            smart scripts that eliminate repetitive work. The end goal? Tools that make people's
-            jobs easier — because I've been in those jobs, and I know what actually helps.
+            Now I'm an Automation Developer. I combine my enterprise experience with Python to build workflow tooling, data pipelines, and smart scripts that eliminate repetitive work. The end goal? Tools that make people's jobs easier — because I've been in those jobs, and I know what actually helps.
           </p>
         </div>
       </div>

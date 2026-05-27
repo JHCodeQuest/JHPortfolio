@@ -15,7 +15,7 @@ export default function HeroSection() {
         <p className="text-xl sm:text-2xl text-[var(--color-text-secondary)] max-w-[650px] mx-auto mb-12 leading-relaxed">
           I earned a CS degree and spent years building enterprise software — then
           took a chance on work that gave me a perspective most developers never have.
-          Now I'm building my way back into tech as an Automation Developer.
+          Now I'm an Automation Developer building workflow tooling, data pipelines, and smart scripts that eliminate repetitive work.
         </p>
         <div className="flex gap-4 flex-wrap justify-center">
           <a href="https://github.com/JHCodeQuest" target="_blank" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[var(--color-accent)] text-[var(--color-bg-deep)] font-semibold rounded-xl no-underline hover:-translate-y-0.5 hover:glow-md transition-all duration-150">
