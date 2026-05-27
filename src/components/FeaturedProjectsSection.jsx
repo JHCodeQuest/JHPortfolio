@@ -19,7 +19,7 @@ const featured = [
   {
     icon: '\u{1F9E0}',
     title: 'Entropy Wordle Bot',
-    description: 'Information-theory-based Wordle solver using Shannon Entropy to choose optimal guesses.',
+    description: 'Built to explore information theory in practice — a Wordle solver that uses Shannon Entropy to find optimal guesses, all from the command line.',
     tags: ['Python', 'Algorithms'],
     screenshot: 'screenshots/wordle-bot.png',
     github: 'https://github.com/JHCodeQuest/pyWordles',
