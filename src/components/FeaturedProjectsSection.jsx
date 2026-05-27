@@ -2,7 +2,7 @@ const featured = [
   {
     icon: '\u{1F5F3}\uFE0F',
     title: 'Civic Lens',
-    description: 'Built to better understand UK political trends using public polling data and prediction modelling.',
+    description: 'Built to track UK election trends using public polling data and prediction modelling. Helps analysts and voters understand where the race is heading.',
     tags: ['React', 'TypeScript', 'GitHub Pages'],
     screenshot: 'screenshots/civic-lens-full.png',
     github: 'https://github.com/JHCodeQuest/civic-lens',
@@ -11,7 +11,7 @@ const featured = [
   {
     icon: '\u2699\uFE0F',
     title: 'Automation Dashboard',
-    description: 'Built to centralise automation experiments and Power Platform integrations into a single workflow dashboard — replacing scattered scripts with one place to monitor and manage.',
+    description: 'Built to centralise automation experiments and Power Platform integrations into a single workflow dashboard — replacing scattered scripts with one place to monitor and manage. Designed for developers who need visibility into their automation pipelines.',
     tags: ['Python', 'FastAPI', 'SQLite'],
     screenshot: 'screenshots/automation-dashboard.png',
     github: 'https://github.com/JHCodeQuest/Automation-Dashboard',
@@ -19,7 +19,7 @@ const featured = [
   {
     icon: '\u{1F9E0}',
     title: 'Entropy Wordle Bot',
-    description: 'Built to explore information theory in practice — a Wordle solver that uses Shannon Entropy to find optimal guesses, all from the command line.',
+    description: 'Built to explore information theory in practice — a Wordle solver that uses Shannon Entropy to find optimal guesses, all from the command line. Useful for anyone curious about how math can beat word games.',
     tags: ['Python', 'Algorithms'],
     screenshot: 'screenshots/wordle-bot.png',
     github: 'https://github.com/JHCodeQuest/pyWordles',
