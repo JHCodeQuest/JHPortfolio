@@ -24,14 +24,6 @@ const featured = [
     screenshot: 'screenshots/wordle-bot.png',
     github: 'https://github.com/JHCodeQuest/pyWordles',
   },
-  {
-    icon: '\u{1F4CA}',
-    title: 'Gaming / Data Projects',
-    description: 'Experimental projects around APIs, statistics, and gaming analytics — exploring data pipelines and statistical models.',
-    tags: ['Python', 'APIs', 'Data Analysis'],
-    screenshot: 'screenshots/gaming-data.png',
-    github: 'https://github.com/JHCodeQuest/gaming-data',
-  },
 ]
 
 export default function FeaturedProjectsSection() {
@@ -47,7 +39,7 @@ export default function FeaturedProjectsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1000px] mx-auto">
           {featured.map((p) => (
             <div
               key={p.title}
