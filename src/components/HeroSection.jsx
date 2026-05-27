@@ -4,7 +4,7 @@ export default function HeroSection() {
       <div className="max-w-[1400px] mx-auto w-full text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-accent-subtle)] border border-[var(--color-border-accent)] rounded-full font-[var(--font-mono)] text-sm text-[var(--color-accent)] mb-8">
           <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
-          Enterprise Dev → Setback → Automation Developer
+          Enterprise Dev → Automation Developer
         </div>
         <h1 className="font-[var(--font-display)] text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] mb-3">
           <span className="block">Joseph Hassan</span>
