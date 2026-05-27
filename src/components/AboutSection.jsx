@@ -1,12 +1,12 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="px-4 sm:px-8 py-24 relative z-10">
+    <section id="about" className="px-4 sm:px-8 py-28 relative z-10">
       <div className="max-w-[1400px] mx-auto">
-        <div className="mb-16">
+        <div className="mb-20">
           <p className="text-center inline-flex items-center gap-2 font-[var(--font-mono)] text-sm text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4 w-full justify-center before:content-['//'] before:opacity-50">
             My Story
           </p>
-          <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
+          <h2 className="text-center font-[var(--font-display)] text-[clamp(2.2rem,4.5vw,3.2rem)] font-bold tracking-[-0.02em]">
             The Comeback Story
           </h2>
         </div>

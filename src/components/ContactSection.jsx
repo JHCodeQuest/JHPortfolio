@@ -1,12 +1,12 @@
 export default function ContactSection() {
   return (
-    <section id="contact" className="px-4 sm:px-8 py-24 relative z-10">
+    <section id="contact" className="px-4 sm:px-8 py-28 relative z-10">
       <div className="max-w-[1400px] mx-auto text-center">
-        <div className="mb-12">
+        <div className="mb-16">
           <p className="inline-flex items-center gap-2 font-[var(--font-mono)] text-sm text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4 before:content-['//'] before:opacity-50">
             Contact
           </p>
-          <h2 className="font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em] mb-6">
+          <h2 className="font-[var(--font-display)] text-[clamp(2.2rem,4.5vw,3.2rem)] font-bold tracking-[-0.02em] mb-6">
             Let's Connect
           </h2>
           <p className="text-[var(--color-text-secondary)] text-lg max-w-[500px] mx-auto mb-10">
