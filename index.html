@@ -1328,6 +1328,71 @@
                 display: none !important;
             }
         }
+        /* ========== FEATURED PROJECTS STYLES ========== */
+        .featured-section {
+            padding: calc(var(--space-lg) + 1rem) var(--space-md);
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: var(--space-md);
+            align-items: stretch;
+        }
+
+        .featured-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: var(--space-md);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--color-border-accent);
+            box-shadow: var(--glow-sm);
+        }
+
+        .featured-card-header {
+            display: flex;
+            gap: var(--space-sm);
+            align-items: center;
+            margin-bottom: var(--space-sm);
+        }
+
+        .featured-card-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: var(--color-bg-elevated);
+            flex-shrink: 0;
+        }
+
+        .featured-card h3 {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+        }
+
+        .featured-card p {
+            color: var(--color-text-secondary);
+            margin: 0.5rem 0 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .featured-card-cta {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
@@ -1580,6 +1645,71 @@
             );
         }
         
+        // ========== FEATURED PROJECTS ==========
+        function FeaturedProjectsSection() {
+            const featured = [
+                {
+                    icon: '🧠',
+                    title: 'Entropy Wordle Bot',
+                    description: 'Information-theory-based Wordle solver using Shannon Entropy to choose optimal guesses.',
+                    tags: ['Python', 'Algorithms'] ,
+                    github: 'https://github.com/JHCodeQuest/pyWordles'
+                },
+                {
+                    icon: '📦',
+                    title: 'Stock Inquiry Assistant',
+                    description: 'AI-powered inventory identification and lookup using computer vision and OCR.',
+                    tags: ['Python', 'Computer Vision'],
+                    github: 'https://github.com/JHCodeQuest/stock-inquiry-assistant'
+                },
+                {
+                    icon: '🎮',
+                    title: 'Neon Breakout',
+                    description: 'A neon-styled brick breaker built with Phaser3 — playable demo and source available.',
+                    tags: ['JavaScript', 'Game Dev'],
+                    link: 'https://notbovvered.itch.io/neon-breakout'
+                }
+            ];
+
+            return (
+                <section className="featured-section section">
+                    <div className="section-content">
+                        <div className="section-header">
+                            <p className="section-label">Featured Work</p>
+                            <h2 className="section-title">Highlighted Projects</h2>
+                        </div>
+
+                        <div className="featured-grid">
+                            {featured.map((p, i) => (
+                                <div key={i} className="featured-card">
+                                    <div>
+                                        <div className="featured-card-header">
+                                            <div className="featured-card-icon">{p.icon}</div>
+                                            <div>
+                                                <h3>{p.title}</h3>
+                                                <div style={{color: 'var(--color-text-secondary)', fontSize: '0.9rem'}}>
+                                                    {p.tags.join(' • ')}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>{p.description}</p>
+                                    </div>
+                                    <div className="featured-card-cta">
+                                        {p.github && (
+                                            <a href={p.github} target="_blank" className="btn btn-secondary">View Code</a>
+                                        )}
+                                        {p.link && (
+                                            <a href={p.link} target="_blank" className="btn btn-primary">Live Demo</a>
+                                        )}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
         // ========== PROJECTS ==========
         function ProjectsSection() {
             const projects = [
@@ -2032,6 +2162,7 @@
                     <HeroSection />
                     <AboutSection />
                     <SkillsSection />
+                    <FeaturedProjectsSection />
                     <ProjectsSection />
                     <ExperienceSection />
                     <CertificatesSection />
