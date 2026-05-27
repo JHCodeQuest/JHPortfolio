@@ -6,9 +6,12 @@ export default function HeroSection() {
           <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
           Enterprise Dev → Setback → Automation Developer
         </div>
-        <h1 className="font-[var(--font-display)] text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] mb-4">
+        <h1 className="font-[var(--font-display)] text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] mb-3">
           <span className="block">Joseph Hassan</span>
         </h1>
+        <p className="text-lg sm:text-xl text-[var(--color-text-secondary)] mb-4">
+          Power Platform Developer building automation tools, Python projects, and data-driven web applications.
+        </p>
         <p className="text-xl sm:text-2xl text-[var(--color-text-secondary)] max-w-[650px] mx-auto mb-12 leading-relaxed">
           I earned a CS degree and spent years building enterprise software — then
           took a chance on work that gave me a perspective most developers never have.
