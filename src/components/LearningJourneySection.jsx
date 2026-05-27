@@ -7,7 +7,7 @@ export default function LearningJourneySection() {
             Learning Journey
           </p>
           <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            What I'm Building Toward
+            What's Next
           </h2>
         </div>
 

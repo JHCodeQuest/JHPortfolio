@@ -43,7 +43,7 @@ export default function FeaturedProjectsSection() {
             Featured Projects
           </p>
           <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            What I've Built
+            Milestones Along the Way
           </h2>
         </div>
 

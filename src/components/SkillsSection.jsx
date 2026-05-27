@@ -17,9 +17,14 @@ export default function SkillsSection() {
             Skills
           </p>
           <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            Tools & Technologies
+            Tools I've Gathered
           </h2>
         </div>
+
+        <p className="text-center text-[var(--color-text-secondary)] max-w-[600px] mx-auto mb-12 leading-relaxed">
+          Every tool here is something I've picked up building real projects —
+          from enterprise systems to automation scripts. I've shipped with every one of them.
+        </p>
 
         <div className="flex flex-wrap justify-center gap-4 max-w-[800px] mx-auto">
           {skills.map((skill) => (

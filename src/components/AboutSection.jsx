@@ -4,10 +4,10 @@ export default function AboutSection() {
       <div className="max-w-[1400px] mx-auto">
         <div className="mb-16">
           <p className="text-center inline-flex items-center gap-2 font-[var(--font-mono)] text-sm text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4 w-full justify-center before:content-['//'] before:opacity-50">
-            About Me
+            My Story
           </p>
           <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            Building Toward Automation
+            A Different Path Into Tech
           </h2>
         </div>
 
@@ -22,17 +22,29 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="max-w-[700px] mx-auto text-center space-y-6">
-          <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed">
-            I started building enterprise applications with C#/.NET and Dynamics 365 at Somerset Council,
-            where I learned what it means to build systems people actually rely on. Since then I've worked
-            across Power Platform, Azure, and Python — always moving toward automation and tooling
-            that makes work faster and less repetitive.
+        <div className="max-w-[720px] mx-auto space-y-6 text-[var(--color-text-secondary)] text-lg leading-relaxed">
+          <p>
+            I didn't take the typical route into tech. Before I was writing code, I was working in
+            care — supporting people in their homes, building patience, empathy, and the kind of
+            communication skills that most developers never learn. That background is still my
+            biggest advantage: I know how to listen to what people actually need.
           </p>
-          <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed">
-            Right now I'm focused on becoming an Automation Developer — combining my enterprise
-            background with Python to build workflow tooling, data pipelines, and smart scripts
-            that solve real problems.
+          <p>
+            I taught myself to code by building things that mattered to me. Python scripts,
+            automation tools, web apps — each project taught me more than any tutorial could.
+            I learned by solving real problems, making mistakes, and shipping anyway.
+          </p>
+          <p>
+            Along the way I picked up enterprise experience too — building ASP.NET applications
+            for Somerset Council, working with Dynamics 365 at Origin, and even building a
+            Python stock-identification tool at Alpine F1. That mix of self-taught creativity
+            and enterprise discipline is what makes my approach different.
+          </p>
+          <p>
+            Now I'm focused on becoming an Automation Developer. I combine my enterprise
+            background with Python to build workflow tooling, data pipelines, and smart
+            scripts that eliminate repetitive work. The end goal? Tools that make people's
+            jobs easier — because I've been in those jobs, and I know what actually helps.
           </p>
         </div>
       </div>

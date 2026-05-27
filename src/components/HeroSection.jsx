@@ -4,13 +4,15 @@ export default function HeroSection() {
       <div className="max-w-[1400px] mx-auto w-full text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-accent-subtle)] border border-[var(--color-border-accent)] rounded-full font-[var(--font-mono)] text-sm text-[var(--color-accent)] mb-8">
           <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
-          Automation Developer
+          Care Worker → Self-Taught Dev → Automation Engineer
         </div>
         <h1 className="font-[var(--font-display)] text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] mb-4">
           <span className="block">Joseph Hassan</span>
         </h1>
-        <p className="text-xl sm:text-2xl text-[var(--color-text-secondary)] max-w-[600px] mx-auto mb-12 leading-relaxed">
-          From enterprise systems to Python automation. I build workflow tooling, scripts, and data-driven solutions that eliminate repetitive work.
+        <p className="text-xl sm:text-2xl text-[var(--color-text-secondary)] max-w-[650px] mx-auto mb-12 leading-relaxed">
+          I've gone from care work to coding — building real projects every step of the way.
+          Now I'm transitioning into automation development with a people-first perspective
+          most developers don't have.
         </p>
         <div className="flex gap-4 flex-wrap justify-center">
           <a href="https://github.com/JHCodeQuest" target="_blank" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[var(--color-accent)] text-[var(--color-bg-deep)] font-semibold rounded-xl no-underline hover:-translate-y-0.5 hover:glow-md transition-all duration-150">
