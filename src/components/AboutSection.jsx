@@ -7,7 +7,7 @@ export default function AboutSection() {
             My Story
           </p>
           <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            A Different Path Into Tech
+            The Comeback Story
           </h2>
         </div>
 
@@ -24,26 +24,29 @@ export default function AboutSection() {
 
         <div className="max-w-[720px] mx-auto space-y-6 text-[var(--color-text-secondary)] text-lg leading-relaxed">
           <p>
-            I didn't take the typical route into tech. Before I was writing code, I was working in
-            care — supporting people in their homes, building patience, empathy, and the kind of
-            communication skills that most developers never learn. That background is still my
-            biggest advantage: I know how to listen to what people actually need.
+            I studied Computer Science and earned my BSc (2:1), then spent four years building
+            real software — first as a Software Developer at Somerset Council, then as a Power
+            Platform Developer, and later as a Dynamics 365 developer at Origin. I've shipped
+            ASP.NET applications, built SQL-backed systems, and integrated Azure services into
+            production environments. I know what it means to deliver enterprise software.
           </p>
           <p>
-            I taught myself to code by building things that mattered to me. Python scripts,
-            automation tools, web apps — each project taught me more than any tutorial could.
-            I learned by solving real problems, making mistakes, and shipping anyway.
+            Then I was made redundant. Like a lot of people in tech recently, I found myself
+            applying for anything that would pay the bills. I took a warehouse role at Alpine F1
+            — stock management, inventory systems, fast-paced operations. I even built a Python
+            tool there using photo recognition to speed up stock identification, because I can't
+            help solving problems with code.
           </p>
           <p>
-            Along the way I picked up enterprise experience too — building ASP.NET applications
-            for Somerset Council, working with Dynamics 365 at Origin, and even building a
-            Python stock-identification tool at Alpine F1. That mix of self-taught creativity
-            and enterprise discipline is what makes my approach different.
+            From there I moved into domiciliary care — supporting people in their homes,
+            building patience, empathy, and the kind of communication skills you don't learn
+            in an office. That background is now my biggest advantage: I know how to listen
+            to what people actually need.
           </p>
           <p>
-            Now I'm focused on becoming an Automation Developer. I combine my enterprise
-            background with Python to build workflow tooling, data pipelines, and smart
-            scripts that eliminate repetitive work. The end goal? Tools that make people's
+            Now I'm studying my re-entry into tech as an Automation Developer. I combine my
+            enterprise experience with Python to build workflow tooling, data pipelines, and
+            smart scripts that eliminate repetitive work. The end goal? Tools that make people's
             jobs easier — because I've been in those jobs, and I know what actually helps.
           </p>
         </div>
