@@ -4,6 +4,7 @@ const featured = [
     title: 'Civic Lens',
     description: 'UK politics analysis and prediction platform using polling data and public datasets. Tracks election trends and predicts constituency outcomes.',
     tags: ['React', 'TypeScript', 'GitHub Pages'],
+    screenshot: 'screenshots/civic-lens-full.png',
     github: 'https://github.com/JHCodeQuest/civic-lens',
     link: 'https://jhcodequest.github.io/civic-lens/',
   },
@@ -12,6 +13,7 @@ const featured = [
     title: 'Automation Dashboard',
     description: 'Internal-style workflow dashboard for automation experiments and Power Platform integrations.',
     tags: ['Python', 'FastAPI', 'SQLite'],
+    screenshot: 'screenshots/automation-dashboard.png',
     github: 'https://github.com/JHCodeQuest/automation-dashboard',
   },
   {
@@ -19,6 +21,7 @@ const featured = [
     title: 'Entropy Wordle Bot',
     description: 'Information-theory-based Wordle solver using Shannon Entropy to choose optimal guesses.',
     tags: ['Python', 'Algorithms'],
+    screenshot: 'screenshots/wordle-bot.png',
     github: 'https://github.com/JHCodeQuest/pyWordles',
   },
 ]
@@ -40,33 +43,41 @@ export default function FeaturedProjectsSection() {
           {featured.map((p) => (
             <div
               key={p.title}
-              className="bg-gradient-to-b from-[rgba(255,255,255,0.02)] to-[rgba(255,255,255,0.01)] border border-[var(--color-border)] rounded-2xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--color-border-accent)] hover:shadow-[0_0_20px_var(--color-accent-glow)]"
+              className="bg-gradient-to-b from-[rgba(255,255,255,0.02)] to-[rgba(255,255,255,0.01)] border border-[var(--color-border)] rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--color-border-accent)] hover:shadow-[0_0_20px_var(--color-accent-glow)]"
             >
-              <div>
-                <div className="flex gap-4 items-center mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-[var(--color-bg-elevated)] flex items-center justify-center text-2xl shrink-0">
+              <a href={p.link || p.github} target="_blank" className="block overflow-hidden">
+                <img
+                  src={p.screenshot}
+                  alt={`${p.title} screenshot`}
+                  className="w-full aspect-[16/10] object-cover object-top border-b border-[var(--color-border)] transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                />
+              </a>
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex gap-3 items-center mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-[var(--color-bg-elevated)] flex items-center justify-center text-lg shrink-0">
                     {p.icon}
                   </div>
-                  <div>
-                    <h3 className="font-[var(--font-display)] text-lg">{p.title}</h3>
-                    <div className="text-sm text-[var(--color-text-secondary)]">
+                  <div className="min-w-0">
+                    <h3 className="font-[var(--font-display)] text-base">{p.title}</h3>
+                    <div className="text-xs text-[var(--color-text-secondary)] truncate">
                       {p.tags.join(' \u2022 ')}
                     </div>
                   </div>
                 </div>
-                <p className="text-sm text-[var(--color-text-secondary)] mb-4 leading-relaxed">{p.description}</p>
-              </div>
-              <div className="flex gap-4 mt-auto">
-                {p.github && (
-                  <a href={p.github} target="_blank" className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-transparent text-[var(--color-text-primary)] border border-[var(--color-border)] font-semibold text-sm rounded-xl no-underline hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent-subtle)] transition-all duration-150">
-                    View Code
-                  </a>
-                )}
-                {p.link && (
-                  <a href={p.link} target="_blank" className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[var(--color-accent)] text-[var(--color-bg-deep)] font-semibold text-sm rounded-xl no-underline hover:glow-sm transition-all duration-150">
-                    Live Demo
-                  </a>
-                )}
+                <p className="text-sm text-[var(--color-text-secondary)] mb-4 leading-relaxed flex-1">{p.description}</p>
+                <div className="flex gap-3">
+                  {p.github && (
+                    <a href={p.github} target="_blank" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-transparent text-[var(--color-text-primary)] border border-[var(--color-border)] font-semibold text-xs rounded-xl no-underline hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent-subtle)] transition-all duration-150">
+                      View Code
+                    </a>
+                  )}
+                  {p.link && (
+                    <a href={p.link} target="_blank" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-[var(--color-accent)] text-[var(--color-bg-deep)] font-semibold text-xs rounded-xl no-underline hover:glow-sm transition-all duration-150">
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
