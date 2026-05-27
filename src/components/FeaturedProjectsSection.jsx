@@ -2,7 +2,7 @@ const featured = [
   {
     icon: '\u{1F5F3}\uFE0F',
     title: 'Civic Lens',
-    description: 'UK politics analysis and prediction platform using polling data and public datasets. Tracks election trends and predicts constituency outcomes.',
+    description: 'Built to better understand UK political trends using public polling data and prediction modelling.',
     tags: ['React', 'TypeScript', 'GitHub Pages'],
     screenshot: 'screenshots/civic-lens-full.png',
     github: 'https://github.com/JHCodeQuest/civic-lens',
