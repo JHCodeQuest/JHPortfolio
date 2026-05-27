@@ -14,7 +14,7 @@ const featured = [
     description: 'Internal-style workflow dashboard for automation experiments and Power Platform integrations.',
     tags: ['Python', 'FastAPI', 'SQLite'],
     screenshot: 'screenshots/automation-dashboard.png',
-    github: 'https://github.com/JHCodeQuest/automation-dashboard',
+    github: 'https://github.com/JHCodeQuest/Automation-Dashboard',
   },
   {
     icon: '\u{1F9E0}',
