@@ -60,12 +60,19 @@ export default function FeaturedProjectsSection() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="font-[var(--font-display)] text-base">{p.title}</h3>
-                    <div className="text-xs text-[var(--color-text-secondary)] truncate">
-                      {p.tags.join(' \u2022 ')}
-                    </div>
                   </div>
                 </div>
                 <p className="text-sm text-[var(--color-text-secondary)] mb-4 leading-relaxed flex-1">{p.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {p.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="inline-flex px-3 py-1 text-xs font-medium rounded-full border border-[var(--color-border-accent)] bg-[var(--color-accent-subtle)] text-[var(--color-accent)]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 <div className="flex gap-3">
                   {p.github && (
                     <a href={p.github} target="_blank" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-transparent text-[var(--color-text-primary)] border border-[var(--color-border)] font-semibold text-xs rounded-xl no-underline hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent-subtle)] transition-all duration-150">
