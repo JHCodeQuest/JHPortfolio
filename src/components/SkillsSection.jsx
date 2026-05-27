@@ -1,11 +1,20 @@
-const skills = [
-  'Power Platform',
-  'Power Automate',
-  'Python',
-  'React',
-  'Git / GitHub',
-  'APIs',
-  'SQL',
+const skillGroups = [
+  {
+    label: 'Automation',
+    items: ['Power Platform', 'Power Automate'],
+  },
+  {
+    label: 'Backend',
+    items: ['Python', 'APIs', 'SQL'],
+  },
+  {
+    label: 'Frontend',
+    items: ['React'],
+  },
+  {
+    label: 'Tools',
+    items: ['Git / GitHub'],
+  },
 ]
 
 export default function SkillsSection() {
@@ -26,13 +35,22 @@ export default function SkillsSection() {
           from enterprise systems to automation scripts. I've shipped with every one of them.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 max-w-[800px] mx-auto">
-          {skills.map((skill) => (
-            <div
-              key={skill}
-              className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl px-6 py-4 text-base font-medium transition-all duration-150 hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-subtle)] hover:-translate-y-0.5 hover:shadow-[0_0_15px_var(--color-accent-glow)] cursor-default"
-            >
-              {skill}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-[900px] mx-auto">
+          {skillGroups.map((group) => (
+            <div key={group.label}>
+              <p className="font-[var(--font-mono)] text-xs text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4">
+                {group.label}
+              </p>
+              <div className="flex flex-col gap-2">
+                {group.items.map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl px-4 py-3 text-sm font-medium transition-all duration-150 hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-subtle)] hover:-translate-y-0.5 hover:shadow-[0_0_15px_var(--color-accent-glow)] cursor-default"
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
