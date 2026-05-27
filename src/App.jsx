@@ -1,12 +1,9 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
-import SkillsSection from './components/SkillsSection'
 import FeaturedProjectsSection from './components/FeaturedProjectsSection'
-import ProjectsSection from './components/ProjectsSection'
-import ExperienceSection from './components/ExperienceSection'
-import CertificatesSection from './components/CertificatesSection'
-import EducationSection from './components/EducationSection'
+import SkillsSection from './components/SkillsSection'
+import LearningJourneySection from './components/LearningJourneySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
@@ -21,12 +18,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
       <FeaturedProjectsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <CertificatesSection />
-      <EducationSection />
+      <SkillsSection />
+      <LearningJourneySection />
       <ContactSection />
       <Footer />
     </>

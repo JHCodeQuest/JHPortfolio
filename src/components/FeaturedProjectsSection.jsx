@@ -21,36 +21,22 @@ const featured = [
     tags: ['Python', 'Algorithms'],
     github: 'https://github.com/JHCodeQuest/pyWordles',
   },
-  {
-    icon: '\u{1F4E6}',
-    title: 'Stock Inquiry Assistant',
-    description: 'AI-powered inventory identification and lookup using computer vision and OCR.',
-    tags: ['Python', 'Computer Vision'],
-    github: 'https://github.com/JHCodeQuest/stock-inquiry-assistant',
-  },
-  {
-    icon: '\u{1F3AE}',
-    title: 'Neon Breakout',
-    description: 'A neon-styled brick breaker built with Phaser3 — playable demo and source available.',
-    tags: ['JavaScript', 'Game Dev'],
-    link: 'https://notbovvered.itch.io/neon-breakout',
-  },
 ]
 
 export default function FeaturedProjectsSection() {
   return (
-    <section className="px-4 sm:px-8 py-28 relative z-10">
+    <section id="projects" className="px-4 sm:px-8 py-24 relative z-10">
       <div className="max-w-[1400px] mx-auto">
         <div className="mb-16">
-          <p className="inline-flex items-center gap-2 font-[var(--font-mono)] text-sm text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4 before:content-['//'] before:opacity-50">
-            Milestones
+          <p className="text-center inline-flex items-center gap-2 font-[var(--font-mono)] text-sm text-[var(--color-accent)] uppercase tracking-[0.1em] mb-4 w-full justify-center before:content-['//'] before:opacity-50">
+            Featured Projects
           </p>
-          <h2 className="font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
-            What I've Built So Far
+          <h2 className="text-center font-[var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-bold tracking-[-0.02em]">
+            What I've Built
           </h2>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
           {featured.map((p) => (
             <div
               key={p.title}
